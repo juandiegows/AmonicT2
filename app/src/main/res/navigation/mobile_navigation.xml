@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    android:label="  "
+    app:startDestination="@id/initFragment">
+    <fragment
+        android:id="@+id/initFragment"
+        android:name="com.example.amonict2.ui.init.InitFragment"
+        tools:layout="@layout/fragment_init" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.amonict2.ui.About.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/flightsFragment"
+        android:name="com.example.amonict2.ui.flights.FlightsFragment"
+        android:label="fragment_flights"
+        tools:layout="@layout/fragment_flights" />
+    <fragment
+        android:id="@+id/seatFragment"
+        android:name="com.example.amonict2.ui.Seat.SeatFragment"
+        android:label="fragment_seat"
+        tools:layout="@layout/fragment_seat" />
+    <fragment
+        android:id="@+id/amenitiesFragment"
+        android:name="com.example.amonict2.ui.Amenities.AmenitiesFragment"
+        android:label="fragment_amenities"
+        tools:layout="@layout/fragment_amenities" />
+</navigation>

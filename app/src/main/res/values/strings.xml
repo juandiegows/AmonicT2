@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AmonicT2</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="aboutEmp">AMONIC Airlines is a new airline based in Abu Dhabi, UAE and is trying to bring a flying option to those with fun and active lifestyles, with brand new planes, attractive fares, top-notch service, and a host of fun, innovative amenities. We plan to reinvent regional air travel in our image. The AMONIC Airlines mission statement is to connect people to what is important in their lives through friendly, reliable, and low-cost air travel. While keeping our status as the region’s youngest and most vibrant, AMONIC Airlines makes flying more fun.</string>
+</resources>
