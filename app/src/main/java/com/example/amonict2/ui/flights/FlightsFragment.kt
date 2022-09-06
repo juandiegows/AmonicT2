@@ -157,6 +157,7 @@ class FlightsFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(FlightsViewModel::class.java)
         // TODO: Use the ViewModel
+
     }
 
 }

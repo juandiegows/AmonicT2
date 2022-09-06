@@ -20,7 +20,7 @@ class CallServiceJD {
         }
 
         fun StartQuery(address: String, method: method, data: String, servicesJD: servicesJD) {
-            try {
+
                 CoroutineScope(Dispatchers.IO).launch {
                     var client = URL("$ruta/$address").openConnection() as HttpURLConnection
 
@@ -47,10 +47,7 @@ class CallServiceJD {
                     }
 
                 }
-            } finally {
-                servicesJD.Error("Error en el API",1)
 
-            }
         }
     }
 }

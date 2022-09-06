@@ -23,8 +23,8 @@
 
     <ListView
         android:id="@+id/listBinding"
-        android:layout_width="409dp"
-        android:layout_height="686dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
