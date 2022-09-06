@@ -12,6 +12,8 @@
         <entry key="..\:/Users/Sena/AndroidStudioProjects/AmonicT2/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.2305" />
         <entry key="..\:/Users/Sena/AndroidStudioProjects/AmonicT2/app/src/main/res/drawable/side_nav_bar.xml" value="0.2305" />
         <entry key="..\:/Users/Sena/AndroidStudioProjects/AmonicT2/app/src/main/res/font/verdanai.xml" value="0.3958333333333333" />
+        <entry key="..\:/Users/Sena/AndroidStudioProjects/AmonicT2/app/src/main/res/layout-land/fragment_about.xml" value="0.134375" />
+        <entry key="..\:/Users/Sena/AndroidStudioProjects/AmonicT2/app/src/main/res/layout-land/fragment_amenities.xml" value="0.134375" />
         <entry key="..\:/Users/Sena/AndroidStudioProjects/AmonicT2/app/src/main/res/layout/activity_fullscreen.xml" value="0.358695652173913" />
         <entry key="..\:/Users/Sena/AndroidStudioProjects/AmonicT2/app/src/main/res/layout/activity_main.xml" value="0.34564102564102567" />
         <entry key="..\:/Users/Sena/AndroidStudioProjects/AmonicT2/app/src/main/res/layout/app_bar_main.xml" value="0.18802083333333333" />
@@ -28,7 +30,6 @@
         <entry key="..\:/Users/Sena/AndroidStudioProjects/AmonicT2/app/src/main/res/menu/main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Sena/AndroidStudioProjects/AmonicT2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2305" />
         <entry key="..\:/Users/Sena/AndroidStudioProjects/AmonicT2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2305" />
-        <entry key="..\:/Users/mejia/AndroidStudioProjects/AmonicT2/app/src/main/res/layout/content_main.xml" value="0.15" />
       </map>
     </option>
   </component>
