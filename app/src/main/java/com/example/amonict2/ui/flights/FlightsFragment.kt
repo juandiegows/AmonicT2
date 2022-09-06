@@ -45,6 +45,7 @@ class FlightsFragment : Fragment() {
             "",
             object : servicesJD {
                 override fun Finish(responseText: String, status: Int) {
+                    Log.e("Finish", "Finish: $status" )
                     this@FlightsFragment.requireActivity().runOnUiThread {
                         var list = JSONArray(responseText).toList(schedule::class.java.name)
                         binding.listSchedule.adapter = AdapterFight(
@@ -55,7 +56,7 @@ class FlightsFragment : Fragment() {
                 }
 
                 override fun Error(responseText: String, status: Int) {
-
+                    Log.e("Error", "Error: $status" )
                 }
             }
         )
@@ -85,6 +86,7 @@ class FlightsFragment : Fragment() {
     }
 
     private fun FillSpinnerAirport() {
+        Log.e("HOla", "FillSpinnerAirport: HOla" )
         CallServiceJD.StartQuery("api/port/list",
             CallServiceJD.Companion.method.GET,
             "",

@@ -20,32 +20,37 @@ class CallServiceJD {
         }
 
         fun StartQuery(address: String, method: method, data: String, servicesJD: servicesJD) {
+            try {
+                CoroutineScope(Dispatchers.IO).launch {
+                    var client = URL("$ruta/$address").openConnection() as HttpURLConnection
 
-            CoroutineScope(Dispatchers.IO).launch {
-                var client = URL("$ruta/$address").openConnection() as HttpURLConnection
+                    client.requestMethod = method.name
 
-                client.requestMethod = method.name
-
-                if (method == Companion.method.PUT || method == Companion.method.POST) {
-                    client.setRequestProperty("content-type", "application/json")
-                    client.outputStream.write(data.encodeToByteArray())
-                }
-                if (client.errorStream != null) {
-                    client.errorStream.bufferedReader().use {
-                        servicesJD.Error(it.readText(), client.responseCode)
+                    if (method == Companion.method.PUT || method == Companion.method.POST) {
+                        client.setRequestProperty("content-type", "application/json")
+                        client.outputStream.write(data.encodeToByteArray())
                     }
 
-                    return@launch
-                }
-                if (client.inputStream != null) {
-                    client.inputStream.bufferedReader().use {
-                        servicesJD.Finish(it.readText(), client.responseCode)
+                    if (client.errorStream != null) {
+                        client.errorStream.bufferedReader().use {
+                            servicesJD.Error(it.readText(), client.responseCode)
+                        }
+
+                        return@launch
+                    }
+                    if (client.inputStream != null) {
+                        client.inputStream.bufferedReader().use {
+                            servicesJD.Finish(it.readText(), client.responseCode)
+                        }
+
+                        return@launch
                     }
 
-                    return@launch
                 }
+            } finally {
+                servicesJD.Error("Error en el API",1)
+
             }
-
         }
     }
 }

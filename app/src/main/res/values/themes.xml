@@ -11,7 +11,7 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <item name="drawerArrowStyle">@style/DrawerIcon</item>
+
         <!-- Customize your theme here. -->
     </style>
 
@@ -31,13 +31,13 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.AmonicT2.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-    <style name="DrawerIcon" parent="@style/Widget.AppCompat.DrawerArrowToggle">
-        <item name="spinBars">true</item>
-        <item name="color">@android:color/white</item>
+    <style name="Theme.AmonicT2.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >\
+        <item name="android:textColorSecondary">#000000</item>
+        <item name="colorControlNormal">@color/black</item>
     </style>
+
     <style name="Theme.AmonicT2.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" >
 
-        <item name="drawerArrowStyle">@style/DrawerIcon</item>
+        <item name="android:textColorSecondary">#000000</item>
     </style>
 </resources>
